@@ -1,6 +1,6 @@
 import { React } from 'react';
 import { useSelector } from 'react-redux';
-
+import Rocket from './Rocket';
 
 const Rockets = () => {
   const rockets = useSelector((state) => state.rockets);
@@ -9,9 +9,10 @@ const Rockets = () => {
       { rockets.map((rocket) => (
         <Rocket
           key={rocket.id}
-          title={rocket.title}
+          rocketName={rocket.rocket_name}
           description={rocket.description}
           id={rocket.id}
+          flickrImages={rocket.flickr_images}
         />
       ))}
     </div>
