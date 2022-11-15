@@ -19,7 +19,7 @@ const MissionsSlice = createSlice({
     [getMissions.fulfilled]: (state, action) => action.payload.map((element) => (
       {
         id: element.mission_id,
-        rocket_name: element.mission_name,
+        mission_name: element.mission_name,
         description: element.description,
       }
     )),
