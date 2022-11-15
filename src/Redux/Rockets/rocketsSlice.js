@@ -15,10 +15,7 @@ const rocketsSlice = createSlice({
   name: 'rockets',
   initialState,
   extraReducers: {
-    [getRockets.fulfilled]: (state, action) => {
-      console.log(action.payload);
-      return [...state];
-    },
+    [getRockets.fulfilled]: (state, action) => action.payload,
   },
 });
 
