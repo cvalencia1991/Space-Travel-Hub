@@ -18,7 +18,7 @@ function NavbarSpace() {
         <ul className="d-flex p-0 gap-3">
           <li>
             <NavLink
-              to="Rockets"
+              to="/rockets"
             >
               Rockets
             </NavLink>
