@@ -6,7 +6,7 @@ const GET_MISSIONS = 'GET_MISSIONS';
 export const getMissions = createAsyncThunk(
   GET_MISSIONS,
   async () => {
-    const response = await fetch('https://api.spacexdata.com/v3/rockets');
+    const response = await fetch('https://api.spacexdata.com/v3/missions');
     const result = await response.json();
     return result;
   },
