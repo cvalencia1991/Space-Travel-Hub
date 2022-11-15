@@ -3,6 +3,7 @@ import NavbarSpace from './Components/Navbar';
 import './App.css';
 import Myprofile from './Components/Myprofile';
 import Rockets from './Components/Rockets';
+import Missions from './Components/Missions';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Myprofile />} />
         <Route path="/rockets" element={<Rockets />} />
+        <Route exact path="/Missions" element={<Missions />} />
       </Routes>
     </Router>
   );
