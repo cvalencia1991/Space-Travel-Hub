@@ -15,7 +15,14 @@ const rocketsSlice = createSlice({
   name: 'rockets',
   initialState,
   extraReducers: {
-    [getRockets.fulfilled]: (state, action) => action.payload,
+    [getRockets.fulfilled]: (state, action) => action.payload.map((element) => (
+      {
+        id: element.id,
+        rocket_name: element.rocket_name,
+        description: element.description,
+        flickr_images: element.flickr_images,
+      }
+    )),
   },
 });
 
