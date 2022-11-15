@@ -1,8 +1,9 @@
+import NavbarSpace from './Components/Navbar';
 import './App.css';
 
 function App() {
   return (
-    <div>dsadsa</div>
+    <NavbarSpace />
   );
 }
 
