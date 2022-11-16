@@ -15,6 +15,15 @@ export const getMissions = createAsyncThunk(
 const MissionsSlice = createSlice({
   name: 'Missions',
   initialState,
+  reducers: {
+    Missionstatus(state, action) {
+      const newState = state.map((mission) => {
+        if (mission.id !== action.payload) { return mission; }
+        return { ...mission, reserved: true };
+      });
+      return newState;
+    },
+  },
   extraReducers: {
     [getMissions.fulfilled]: (state, action) => action.payload.map((element) => (
       {
@@ -26,4 +35,5 @@ const MissionsSlice = createSlice({
   },
 });
 
+export const { Missionstatus } = MissionsSlice.actions;
 export default MissionsSlice.reducer;
