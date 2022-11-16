@@ -6,6 +6,7 @@ import CardImg from 'react-bootstrap/CardImg';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Badge from 'react-bootstrap/Badge';
 import { reserveRocket, cancelReservation } from '../Redux/Rockets/rocketsSlice';
 
 const Rocket = (props) => {
@@ -32,10 +33,12 @@ const Rocket = (props) => {
           <Card.Body>
             <Card.Title>{rocketName}</Card.Title>
             <Card.Text>
+              { reserved && (<Badge bg="info">Reserved</Badge>)}
+              {' '}
               {description}
             </Card.Text>
             { reserved
-              ? <Button variant="primary" onClick={handleCancel}>Cancel Reservation</Button>
+              ? <Button variant="outline-secondary" onClick={handleCancel}>Cancel Reservation</Button>
               : <Button variant="primary" onClick={handleReserve}>Reserve Rocket</Button>}
           </Card.Body>
         </Col>
