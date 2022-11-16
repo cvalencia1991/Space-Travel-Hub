@@ -1,15 +1,22 @@
 /* eslint-disable react/prop-types */
 import { React } from 'react';
+import { useDispatch } from 'react-redux';
 import Card from 'react-bootstrap/Card';
+import CardImg from 'react-bootstrap/CardImg';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { CardImg } from 'react-bootstrap';
+import { reserveRocket } from '../Redux/Rockets/rocketsSlice';
 
 const Rocket = (props) => {
+  const dispatch = useDispatch();
   const {
-    rocketName, description, flickrImages,
+    id, rocketName, description, flickrImages,
   } = props;
+
+  const handleClick = () => {
+    dispatch(reserveRocket(id));
+  };
 
   return (
     <Card className="border-0 mb-4" style={{ width: '100%' }}>
@@ -23,7 +30,7 @@ const Rocket = (props) => {
             <Card.Text>
               {description}
             </Card.Text>
-            <Button variant="primary">Reserve Rocket</Button>
+            <Button variant="primary" onClick={handleClick}>Reserve Rocket</Button>
           </Card.Body>
         </Col>
       </Row>
