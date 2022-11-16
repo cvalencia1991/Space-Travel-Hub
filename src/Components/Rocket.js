@@ -6,16 +6,20 @@ import CardImg from 'react-bootstrap/CardImg';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { reserveRocket } from '../Redux/Rockets/rocketsSlice';
+import { reserveRocket, cancelReservation } from '../Redux/Rockets/rocketsSlice';
 
 const Rocket = (props) => {
   const dispatch = useDispatch();
   const {
-    id, rocketName, description, flickrImages,
+    id, rocketName, description, flickrImages, reserved,
   } = props;
 
-  const handleClick = () => {
+  const handleReserve = () => {
     dispatch(reserveRocket(id));
+  };
+
+  const handleCancel = () => {
+    dispatch(cancelReservation(id));
   };
 
   return (
@@ -30,7 +34,9 @@ const Rocket = (props) => {
             <Card.Text>
               {description}
             </Card.Text>
-            <Button variant="primary" onClick={handleClick}>Reserve Rocket</Button>
+            { reserved
+              ? <Button variant="primary" onClick={handleCancel}>Cancel Reservation</Button>
+              : <Button variant="primary" onClick={handleReserve}>Reserve Rocket</Button>}
           </Card.Body>
         </Col>
       </Row>
