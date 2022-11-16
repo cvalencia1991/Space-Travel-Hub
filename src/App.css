@@ -1,3 +1,11 @@
 .stylesjoin {
   width: 10%;
 }
+
+.active-link {
+  text-decoration: underline;
+}
+
+.link {
+  text-decoration: none;
+}
