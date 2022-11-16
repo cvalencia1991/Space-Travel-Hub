@@ -1,8 +1,19 @@
-import React from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect } from 'react';
 import { Button } from 'react-bootstrap';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { getMissions } from '../Redux/Missions/Missionslice';
+
+let didInit = false;
 
 export default function Missions() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    if (!didInit) {
+      didInit = true;
+      dispatch(getMissions());
+    }
+  }, []);
   const missions = useSelector((state) => state.missions);
   return (
     <table className="table table-bordered table-striped m-5 w-auto p-3">

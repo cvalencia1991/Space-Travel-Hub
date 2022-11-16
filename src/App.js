@@ -8,14 +8,13 @@ import Myprofile from './Components/Myprofile';
 import Rockets from './Components/Rockets';
 import Missions from './Components/Missions';
 import { getRockets } from './Redux/Rockets/rocketsSlice';
-import { getMissions } from './Redux/Missions/Missionslice';
 
 function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getRockets());
-    dispatch(getMissions());
+   /*  dispatch(getMissions()); */
   }, []);
 
   return (
