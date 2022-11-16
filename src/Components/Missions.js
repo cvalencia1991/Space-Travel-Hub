@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { Button } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
-import { getMissions, Missionstatus } from '../Redux/Missions/Missionslice';
+import { getMissions, LeaveMission } from '../Redux/Missions/Missionslice';
 
 let didInit = false;
 
@@ -17,7 +17,7 @@ export default function Missions() {
   const missions = useSelector((state) => state.missions);
 
   const joinMission = (id) => {
-    dispatch(Missionstatus(id));
+    dispatch(LeaveMission(id));
   };
 
   return (
