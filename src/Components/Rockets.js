@@ -5,7 +5,7 @@ import Rocket from './Rocket';
 const Rockets = () => {
   const rockets = useSelector((state) => state.rockets);
   return (
-    <div className="rocket-list" style={{ padding: '4em' }}>
+    <div className="rocket-list m-5 p-3">
       { rockets.map((rocket) => (
         <Rocket
           key={rocket.id}
