@@ -13,8 +13,8 @@ export default function Myprofile() {
     <Container>
       <Row>
         <Col>
-          My Missions
-          <ListGroup>
+          <h2>My Missions</h2>
+          <ListGroup className="pt-3">
             {Missionsdeploy.map((mission) => (
               <ListGroupItem key={mission.id}>
                 {mission.mission_name}
