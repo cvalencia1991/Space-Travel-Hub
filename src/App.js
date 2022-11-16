@@ -14,7 +14,6 @@ function App() {
 
   useEffect(() => {
     dispatch(getRockets());
-   /*  dispatch(getMissions()); */
   }, []);
 
   return (
