@@ -20,8 +20,8 @@ function App() {
     <Router>
       <NavbarSpace />
       <Routes>
-        <Route exact path="/" element={<Myprofile />} />
-        <Route path="/rockets" element={<Rockets />} />
+        <Route exact path="/" element={<Rockets />} />
+        <Route path="/myProfile" element={<Myprofile />} />
         <Route exact path="/Missions" element={<Missions />} />
       </Routes>
     </Router>
