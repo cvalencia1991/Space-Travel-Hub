@@ -15,8 +15,8 @@ const Rocket = (props) => {
   } = props;
 
   const handleClick = () => {
-    dispatch(reserveRocket(id))
-  }
+    dispatch(reserveRocket(id));
+  };
 
   return (
     <Card className="border-0 mb-4" style={{ width: '100%' }}>
