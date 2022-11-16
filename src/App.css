@@ -10,10 +10,10 @@
   text-decoration: none;
 }
 
-.stylemissionsbutton{
+.stylemissionsbutton {
   margin-top: 2.4em;
 }
 
-.table>:not(caption)>*>* {
+.table > :not(caption) > * > * {
   padding-left: 1em;
 }
