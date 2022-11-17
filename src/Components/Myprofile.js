@@ -14,9 +14,9 @@ export default function Myprofile() {
         <Col>My Missions</Col>
         <Col>
           <h2>My Rockets</h2>
-          <ListGroup>
+          <ListGroup className="mt-4">
             { reserved.map((rocket) => (
-              <ListGroup.Item key={rocket.id}>{ rocket.rocket_name }</ListGroup.Item>
+              <ListGroup.Item className="p-4" key={rocket.id}>{ rocket.rocket_name }</ListGroup.Item>
             ))}
           </ListGroup>
         </Col>
