@@ -16,9 +16,9 @@ export default function Myprofile() {
       <Row>
         <Col>
           <h2>My Missions</h2>
-          <ListGroup className="pt-3">
+          <ListGroup className="mt-4">
             {Missionsdeploy.map((mission) => (
-              <ListGroupItem key={mission.id}>
+              <ListGroupItem className="p-4" key={mission.id}>
                 {mission.mission_name}
               </ListGroupItem>
             ))}
