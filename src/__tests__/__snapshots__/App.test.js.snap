@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <nav
+    className="p-4 navbar navbar-expand navbar-light"
+  >
+    <div
+      className="container"
+    >
+      <a
+        className="d-flex align-items-center navbar-brand"
+        href="/"
+      >
+        <img
+          alt="Space Travel Hublogo"
+          className="d-inline-block align-top"
+          height="80"
+          src="planet.png"
+          width="80"
+        />
+        <h1
+          className="d-inline ms-2"
+        >
+          Space Traveler's Hub
+        </h1>
+      </a>
+      <ul
+        className="d-flex p-0 gap-3 navigation"
+        style={
+          Object {
+            "listStyle": "none",
+          }
+        }
+      >
+        <li>
+          <a
+            aria-current="page"
+            className="active-link"
+            href="/"
+            onClick={[Function]}
+          >
+            Rockets
+          </a>
+        </li>
+        <li>
+          <a
+            className="link"
+            href="/Missions"
+            onClick={[Function]}
+          >
+            Missions
+          </a>
+        </li>
+        |
+        <li>
+          <a
+            className="link"
+            href="/myProfile"
+            onClick={[Function]}
+          >
+            My Profile
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>,
+  <div
+    className="rocket-list m-5 p-3"
+  />,
+]
+`;

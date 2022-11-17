@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<table
+  className="table table-bordered table-striped m-5 w-auto p-3"
+>
+  <tbody>
+    <tr>
+      <th>
+        Mission
+      </th>
+      <th>
+        Description
+      </th>
+      <th>
+        Status
+      </th>
+      <th
+        className="stylesjoin"
+      >
+         
+      </th>
+    </tr>
+  </tbody>
+</table>
+`;
