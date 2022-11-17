@@ -1,12 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
-import App from '../App';
+import Rockets from '../Components/Rockets';
 import store from '../Redux/configureStore';
 
 it('renders correctly', () => {
-  const app = renderer
-    .create(<Provider store={store}><App /></Provider>)
+  const rockets = renderer
+    .create(<Provider store={store}><Rockets /></Provider>)
     .toJSON();
-  expect(app).toMatchSnapshot();
+  expect(rockets).toMatchSnapshot();
 });

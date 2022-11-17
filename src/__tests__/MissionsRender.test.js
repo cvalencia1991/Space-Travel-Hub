@@ -1,12 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
-import App from '../App';
+import Missions from '../Components/Missions';
 import store from '../Redux/configureStore';
 
 it('renders correctly', () => {
-  const app = renderer
-    .create(<Provider store={store}><App /></Provider>)
+  const missions = renderer
+    .create(<Provider store={store}><Missions /></Provider>)
     .toJSON();
-  expect(app).toMatchSnapshot();
+  expect(missions).toMatchSnapshot();
 });
