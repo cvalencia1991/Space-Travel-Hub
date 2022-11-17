@@ -4,14 +4,26 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import ListGroup from 'react-bootstrap/ListGroup';
+import ListGroupItem from 'react-bootstrap/ListGroupItem';
 
 export default function Myprofile() {
   const rockets = useSelector((state) => state.rockets);
   const reserved = rockets.filter((rocket) => rocket.reserved);
+  const missions = useSelector((state) => state.missions);
+  const Missionsdeploy = missions.filter((mission) => mission.reserved === true);
   return (
     <Container>
       <Row>
-        <Col>My Missions</Col>
+        <Col>
+          <h2>My Missions</h2>
+          <ListGroup className="pt-3">
+            {Missionsdeploy.map((mission) => (
+              <ListGroupItem key={mission.id}>
+                {mission.mission_name}
+              </ListGroupItem>
+            ))}
+          </ListGroup>
+        </Col>
         <Col>
           <h2>My Rockets</h2>
           <ListGroup className="mt-4">

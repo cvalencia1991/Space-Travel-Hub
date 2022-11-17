@@ -1,6 +1,8 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react';
 import { Button } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
+import Badge from 'react-bootstrap/Badge';
 import { getMissions, MissionLeave, MissionJoin } from '../Redux/Missions/Missionslice';
 
 let didInit = false;
@@ -35,11 +37,14 @@ export default function Missions() {
           <tr key={mission.id}>
             <th>{mission.mission_name}</th>
             <th>{mission.description}</th>
-            <th>{mission.reserved ? <span>Active Member</span> : <span>Not A member </span> }</th>
+            <th>
+              {mission.reserved ? <Badge className="mt-5" bg="info">Active Member</Badge>
+                : <Badge className="mt-5" bg="secondary">NOT A MEMBER</Badge> }
+            </th>
             <th>
               {mission.reserved
-                ? <Button onClick={() => LeaveMission(mission.id)}>Leave Mission</Button>
-                : <Button onClick={() => joinMission(mission.id)}>Join Mission</Button> }
+                ? <Button className="stylemissionsbutton" variant="outline-danger" onClick={() => LeaveMission(mission.id)}>Leave Mission</Button>
+                : <Button className="stylemissionsbutton" Button variant="outline-secondary" onClick={() => joinMission(mission.id)}>Join Mission</Button> }
             </th>
           </tr>
         ))}
