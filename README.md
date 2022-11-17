@@ -5,8 +5,7 @@
 
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
-
-  <h3><b>Microverse README Template</b></h3>
+  <h3>Space Travel Hub</h3>
 
 </div>
 
@@ -36,36 +35,20 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [SpaceTravelHub] <a name="about-project"></a>
+# 📖 Space Trave lHub <a name="about-project"></a>
 
->This project shows live data from the SpaceX API. Web application development for a commercial and scientific space travel company. Rockets and space missions will be available for booking through the application.
 
-**[your_project__name]** is a...
+**SpaceTravelHub** is a live data from the SpaceX API. Web application development for a commercial and scientific space travel company. Rockets and space missions will be available for booking through the application.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://reactjs.org/">React-boostrap</a></li>
   </ul>
 </details>
 
@@ -73,11 +56,15 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+- **Implement Rockets screen with the API**
+  ![image](https://user-images.githubusercontent.com/107327344/202558846-9d03055c-757f-4aa3-82f5-c09260522c88.png)
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Implement Mission's of SpaceX**
+  ![image](https://user-images.githubusercontent.com/107327344/202559067-2136144b-d208-4853-bc4a-53d84286332c.png)
+
+- **Adding Missions to Myprofile**
+  ![image](https://user-images.githubusercontent.com/107327344/202559296-e4fdba4d-969e-4639-9ccc-d1482a194b89.png)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,9 +72,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://spacetravelhubspacex.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,7 +80,6 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -103,75 +87,64 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
 
 ```sh
- gem install rails
+ Clone the respository 
+ Add the Npm libraries 
+ Run it 
 ```
- -->
+ 
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
 
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  cd Desktop
+  git clone https://github.com/cvalencia1991/SpaceTravelHub.git
 ```
---->
+
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
-
 ```sh
   cd my-project
-  gem install
+  npm install
 ```
---->
+
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
 
 ```sh
-  rails server
+  npm run start
 ```
---->
+
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
 
 ```sh
-  bin/rails test test/models/article_test.rb
+ npm run test
 ```
---->
+
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
 
 ```sh
-
+ npm run start
 ```
- -->
+ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -179,19 +152,18 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Cesar Alberto Valencia Aguilar**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [https://github.com/cvalencia1991](https://github.com/cvalencia1991)
+- Twitter: [https://twitter.com/cvalenciaguilar](@cvalenciaguilar)
+- LinkedIn: [https://www.linkedin.com/in/cvalenciaguilar/](www.linkedin.com/in/cvalenciaguilar)
 
-👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Felipe Oyarzo**
+
+- GitHub: [@jfoyarzo](https://github.com/jfoyarzo)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jorge-felipe-oyarzo-contreras-647118247/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -199,11 +171,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [Adding Placeholder] 
+**Enhance the My Profile section by adding a placeholder message when the "My Missions" or "My Rockets" lists are empty (no missions joined or no rockets reserved).**
+- [Adding Read more ] **Enhance the My Profile section by adding the "Read more" button for each mission and rocket. Upon click, it should open a corresponding Wikipedia page in a new tab. NOTE - you need to get that extra Wikipedia URL from the API's payload.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -213,7 +183,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/cvalencia1991/SpaceTravelHub/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -221,9 +191,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project Give a ⭐️! 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -231,9 +199,10 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank to spaceX give the Api to the deploy:
+- Rockets: https://api.spacexdata.com/v3/rockets
+- Missions: https://api.spacexdata.com/v3/missions
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -241,24 +210,20 @@ I would like to thank...
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **How can implement the project by Redux?**
 
-  - [Answer_1]
+  - you can impplement with the Duck patter or the basic items to introduce the React-Redux
 
-- **[Question_2]**
+- **Could i use any other style framework thank boostrap in this project?**
 
-  - [Answer_2]
+  - you can give you stiles with tailwindcss or SASS.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
