@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="border-0 mb-4 card"
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-3"
+    >
+      <img
+        className="card-img"
+        src="h"
+        style={
+          Object {
+            "borderRadius": "0",
+          }
+        }
+      />
+    </div>
+    <div
+      className="col"
+    >
+      <div
+        className="card-body"
+      >
+        <div
+          className="card-title h5"
+        >
+          Test Rocket
+        </div>
+        <p
+          className="card-text"
+        >
+          <span
+            className="badge bg-info"
+          >
+            Reserved
+          </span>
+           
+          Test description
+        </p>
+        <button
+          className="btn btn-outline-secondary"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Cancel Reservation
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
