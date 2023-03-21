@@ -35,7 +35,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Space Trave lHub <a name="about-project"></a>
+# 📖 Space Travel Hub <a name="about-project"></a>
 
 
 **SpaceTravelHub** is a live data from the SpaceX API. Web application development for a commercial and scientific space travel company. Rockets and space missions will be available for booking through the application.
